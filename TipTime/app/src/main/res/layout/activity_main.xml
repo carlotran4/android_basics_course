@@ -109,7 +109,7 @@
         android:layout_height="wrap_content"
         android:checked="true"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
-
+ 
     <Button
         android:id = "@+id/calculate_button"
         app:layout_constraintEnd_toEndOf="parent"
