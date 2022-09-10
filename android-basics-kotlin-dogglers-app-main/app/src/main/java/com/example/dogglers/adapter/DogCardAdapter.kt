@@ -18,7 +18,10 @@ package com.example.dogglers.adapter
 import android.content.Context
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.dogglers.R
 
 /**
  * Adapter to inflate the appropriate list item layout and populate the view with information
@@ -35,14 +38,17 @@ class DogCardAdapter(
      * Initialize view elements
      */
     class DogCardViewHolder(view: View?): RecyclerView.ViewHolder(view!!) {
-        // TODO: Declare and initialize all of the list item UI components
+        val imageView: ImageView = view!!.findViewById(R.id.image_view)
+        val dogNameView: TextView = view!!.findViewById(R.id.name)
+        val dogAgeView: TextView = view!!.findViewById(R.id.age)
+        val dogHobbyView: TextView = view!!.findViewById(R.id.hobbies)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogCardViewHolder {
         // TODO: Use a conditional to determine the layout type and set it accordingly.
         //  if the layout variable is Layout.GRID the grid list item should be used. Otherwise the
         //  the vertical/horizontal list item should be used.
-
+        
         // TODO Inflate the layout
 
         // TODO: Null should not be passed into the view holder. This should be updated to reflect
